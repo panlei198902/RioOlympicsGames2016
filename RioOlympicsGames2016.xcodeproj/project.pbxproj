@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C28B78801DCDA47F00CEDD10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B787F1DCDA47F00CEDD10 /* AppDelegate.swift */; };
+		C28B78821DCDA47F00CEDD10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B78811DCDA47F00CEDD10 /* ViewController.swift */; };
+		C28B78851DCDA47F00CEDD10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C28B78831DCDA47F00CEDD10 /* Main.storyboard */; };
+		C28B78871DCDA47F00CEDD10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C28B78861DCDA47F00CEDD10 /* Assets.xcassets */; };
+		C28B788A1DCDA47F00CEDD10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C28B78881DCDA47F00CEDD10 /* LaunchScreen.storyboard */; };
+		C28B78951DCDA47F00CEDD10 /* RioOlympicsGames2016Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B78941DCDA47F00CEDD10 /* RioOlympicsGames2016Tests.swift */; };
+		C28B78A01DCDA47F00CEDD10 /* RioOlympicsGames2016UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B789F1DCDA47F00CEDD10 /* RioOlympicsGames2016UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C28B78911DCDA47F00CEDD10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C28B78741DCDA47F00CEDD10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C28B787B1DCDA47F00CEDD10;
+			remoteInfo = RioOlympicsGames2016;
+		};
+		C28B789C1DCDA47F00CEDD10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C28B78741DCDA47F00CEDD10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C28B787B1DCDA47F00CEDD10;
+			remoteInfo = RioOlympicsGames2016;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C28B787C1DCDA47F00CEDD10 /* RioOlympicsGames2016.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RioOlympicsGames2016.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C28B787F1DCDA47F00CEDD10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C28B78811DCDA47F00CEDD10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C28B78841DCDA47F00CEDD10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C28B78861DCDA47F00CEDD10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C28B78891DCDA47F00CEDD10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C28B788B1DCDA47F00CEDD10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C28B78901DCDA47F00CEDD10 /* RioOlympicsGames2016Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RioOlympicsGames2016Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C28B78941DCDA47F00CEDD10 /* RioOlympicsGames2016Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RioOlympicsGames2016Tests.swift; sourceTree = "<group>"; };
+		C28B78961DCDA47F00CEDD10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C28B789B1DCDA47F00CEDD10 /* RioOlympicsGames2016UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RioOlympicsGames2016UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C28B789F1DCDA47F00CEDD10 /* RioOlympicsGames2016UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RioOlympicsGames2016UITests.swift; sourceTree = "<group>"; };
+		C28B78A11DCDA47F00CEDD10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C28B78791DCDA47F00CEDD10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C28B788D1DCDA47F00CEDD10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C28B78981DCDA47F00CEDD10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C28B78731DCDA47F00CEDD10 = {
+			isa = PBXGroup;
+			children = (
+				C28B787E1DCDA47F00CEDD10 /* RioOlympicsGames2016 */,
+				C28B78931DCDA47F00CEDD10 /* RioOlympicsGames2016Tests */,
+				C28B789E1DCDA47F00CEDD10 /* RioOlympicsGames2016UITests */,
+				C28B787D1DCDA47F00CEDD10 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C28B787D1DCDA47F00CEDD10 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C28B787C1DCDA47F00CEDD10 /* RioOlympicsGames2016.app */,
+				C28B78901DCDA47F00CEDD10 /* RioOlympicsGames2016Tests.xctest */,
+				C28B789B1DCDA47F00CEDD10 /* RioOlympicsGames2016UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C28B787E1DCDA47F00CEDD10 /* RioOlympicsGames2016 */ = {
+			isa = PBXGroup;
+			children = (
+				C28B787F1DCDA47F00CEDD10 /* AppDelegate.swift */,
+				C28B78811DCDA47F00CEDD10 /* ViewController.swift */,
+				C28B78831DCDA47F00CEDD10 /* Main.storyboard */,
+				C28B78861DCDA47F00CEDD10 /* Assets.xcassets */,
+				C28B78881DCDA47F00CEDD10 /* LaunchScreen.storyboard */,
+				C28B788B1DCDA47F00CEDD10 /* Info.plist */,
+			);
+			path = RioOlympicsGames2016;
+			sourceTree = "<group>";
+		};
+		C28B78931DCDA47F00CEDD10 /* RioOlympicsGames2016Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C28B78941DCDA47F00CEDD10 /* RioOlympicsGames2016Tests.swift */,
+				C28B78961DCDA47F00CEDD10 /* Info.plist */,
+			);
+			path = RioOlympicsGames2016Tests;
+			sourceTree = "<group>";
+		};
+		C28B789E1DCDA47F00CEDD10 /* RioOlympicsGames2016UITests */ = {
+			isa = PBXGroup;
+			children = (
+				C28B789F1DCDA47F00CEDD10 /* RioOlympicsGames2016UITests.swift */,
+				C28B78A11DCDA47F00CEDD10 /* Info.plist */,
+			);
+			path = RioOlympicsGames2016UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C28B787B1DCDA47F00CEDD10 /* RioOlympicsGames2016 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C28B78A41DCDA47F00CEDD10 /* Build configuration list for PBXNativeTarget "RioOlympicsGames2016" */;
+			buildPhases = (
+				C28B78781DCDA47F00CEDD10 /* Sources */,
+				C28B78791DCDA47F00CEDD10 /* Frameworks */,
+				C28B787A1DCDA47F00CEDD10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RioOlympicsGames2016;
+			productName = RioOlympicsGames2016;
+			productReference = C28B787C1DCDA47F00CEDD10 /* RioOlympicsGames2016.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C28B788F1DCDA47F00CEDD10 /* RioOlympicsGames2016Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C28B78A71DCDA47F00CEDD10 /* Build configuration list for PBXNativeTarget "RioOlympicsGames2016Tests" */;
+			buildPhases = (
+				C28B788C1DCDA47F00CEDD10 /* Sources */,
+				C28B788D1DCDA47F00CEDD10 /* Frameworks */,
+				C28B788E1DCDA47F00CEDD10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C28B78921DCDA47F00CEDD10 /* PBXTargetDependency */,
+			);
+			name = RioOlympicsGames2016Tests;
+			productName = RioOlympicsGames2016Tests;
+			productReference = C28B78901DCDA47F00CEDD10 /* RioOlympicsGames2016Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C28B789A1DCDA47F00CEDD10 /* RioOlympicsGames2016UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C28B78AA1DCDA47F00CEDD10 /* Build configuration list for PBXNativeTarget "RioOlympicsGames2016UITests" */;
+			buildPhases = (
+				C28B78971DCDA47F00CEDD10 /* Sources */,
+				C28B78981DCDA47F00CEDD10 /* Frameworks */,
+				C28B78991DCDA47F00CEDD10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C28B789D1DCDA47F00CEDD10 /* PBXTargetDependency */,
+			);
+			name = RioOlympicsGames2016UITests;
+			productName = RioOlympicsGames2016UITests;
+			productReference = C28B789B1DCDA47F00CEDD10 /* RioOlympicsGames2016UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C28B78741DCDA47F00CEDD10 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "derex pan";
+				TargetAttributes = {
+					C28B787B1DCDA47F00CEDD10 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 2NHV9XL52A;
+						ProvisioningStyle = Automatic;
+					};
+					C28B788F1DCDA47F00CEDD10 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 2NHV9XL52A;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C28B787B1DCDA47F00CEDD10;
+					};
+					C28B789A1DCDA47F00CEDD10 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 2NHV9XL52A;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C28B787B1DCDA47F00CEDD10;
+					};
+				};
+			};
+			buildConfigurationList = C28B78771DCDA47F00CEDD10 /* Build configuration list for PBXProject "RioOlympicsGames2016" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C28B78731DCDA47F00CEDD10;
+			productRefGroup = C28B787D1DCDA47F00CEDD10 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C28B787B1DCDA47F00CEDD10 /* RioOlympicsGames2016 */,
+				C28B788F1DCDA47F00CEDD10 /* RioOlympicsGames2016Tests */,
+				C28B789A1DCDA47F00CEDD10 /* RioOlympicsGames2016UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C28B787A1DCDA47F00CEDD10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C28B788A1DCDA47F00CEDD10 /* LaunchScreen.storyboard in Resources */,
+				C28B78871DCDA47F00CEDD10 /* Assets.xcassets in Resources */,
+				C28B78851DCDA47F00CEDD10 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C28B788E1DCDA47F00CEDD10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C28B78991DCDA47F00CEDD10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C28B78781DCDA47F00CEDD10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C28B78821DCDA47F00CEDD10 /* ViewController.swift in Sources */,
+				C28B78801DCDA47F00CEDD10 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C28B788C1DCDA47F00CEDD10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C28B78951DCDA47F00CEDD10 /* RioOlympicsGames2016Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C28B78971DCDA47F00CEDD10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C28B78A01DCDA47F00CEDD10 /* RioOlympicsGames2016UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C28B78921DCDA47F00CEDD10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C28B787B1DCDA47F00CEDD10 /* RioOlympicsGames2016 */;
+			targetProxy = C28B78911DCDA47F00CEDD10 /* PBXContainerItemProxy */;
+		};
+		C28B789D1DCDA47F00CEDD10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C28B787B1DCDA47F00CEDD10 /* RioOlympicsGames2016 */;
+			targetProxy = C28B789C1DCDA47F00CEDD10 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C28B78831DCDA47F00CEDD10 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C28B78841DCDA47F00CEDD10 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C28B78881DCDA47F00CEDD10 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C28B78891DCDA47F00CEDD10 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C28B78A21DCDA47F00CEDD10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C28B78A31DCDA47F00CEDD10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C28B78A51DCDA47F00CEDD10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2NHV9XL52A;
+				INFOPLIST_FILE = RioOlympicsGames2016/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = derex.RioOlympicsGames2016;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C28B78A61DCDA47F00CEDD10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2NHV9XL52A;
+				INFOPLIST_FILE = RioOlympicsGames2016/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = derex.RioOlympicsGames2016;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C28B78A81DCDA47F00CEDD10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2NHV9XL52A;
+				INFOPLIST_FILE = RioOlympicsGames2016Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = derex.RioOlympicsGames2016Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RioOlympicsGames2016.app/RioOlympicsGames2016";
+			};
+			name = Debug;
+		};
+		C28B78A91DCDA47F00CEDD10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2NHV9XL52A;
+				INFOPLIST_FILE = RioOlympicsGames2016Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = derex.RioOlympicsGames2016Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RioOlympicsGames2016.app/RioOlympicsGames2016";
+			};
+			name = Release;
+		};
+		C28B78AB1DCDA47F00CEDD10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 2NHV9XL52A;
+				INFOPLIST_FILE = RioOlympicsGames2016UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = derex.RioOlympicsGames2016UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RioOlympicsGames2016;
+			};
+			name = Debug;
+		};
+		C28B78AC1DCDA47F00CEDD10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 2NHV9XL52A;
+				INFOPLIST_FILE = RioOlympicsGames2016UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = derex.RioOlympicsGames2016UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RioOlympicsGames2016;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C28B78771DCDA47F00CEDD10 /* Build configuration list for PBXProject "RioOlympicsGames2016" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C28B78A21DCDA47F00CEDD10 /* Debug */,
+				C28B78A31DCDA47F00CEDD10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C28B78A41DCDA47F00CEDD10 /* Build configuration list for PBXNativeTarget "RioOlympicsGames2016" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C28B78A51DCDA47F00CEDD10 /* Debug */,
+				C28B78A61DCDA47F00CEDD10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C28B78A71DCDA47F00CEDD10 /* Build configuration list for PBXNativeTarget "RioOlympicsGames2016Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C28B78A81DCDA47F00CEDD10 /* Debug */,
+				C28B78A91DCDA47F00CEDD10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C28B78AA1DCDA47F00CEDD10 /* Build configuration list for PBXNativeTarget "RioOlympicsGames2016UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C28B78AB1DCDA47F00CEDD10 /* Debug */,
+				C28B78AC1DCDA47F00CEDD10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C28B78741DCDA47F00CEDD10 /* Project object */;
+}

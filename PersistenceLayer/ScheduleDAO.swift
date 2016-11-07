@@ -21,7 +21,7 @@ class ScheduleDAO: baseDAO {
             let cSql = sql.cString(using: String.Encoding.utf8)
             
             //使用sqlite3_prepare_v2函数预处理SQL语句
-            var statement: OpaquePointer? = nil
+            let statement: OpaquePointer? = nil
             
             if sqlite3_prepare_v2(db, cSql, -1, nil, nil) == SQLITE_OK{
                 sqlite3_bind_text(statement, 1, model.GameDate!.cString(using: String.Encoding.utf8.rawValue), -1, nil)
@@ -142,7 +142,7 @@ class ScheduleDAO: baseDAO {
     //查询所有数据方法
     func findAll() -> NSMutableArray {
         
-        var dates = NSMutableArray()
+        let dates = NSMutableArray()
         
         if self.openDB() {
             let sql = "select GameDate,GameTime,GameInfo,EventID,ScheduleID from Schedule"

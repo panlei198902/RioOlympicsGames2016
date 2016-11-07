@@ -14,6 +14,15 @@
 		C28B788A1DCDA47F00CEDD10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C28B78881DCDA47F00CEDD10 /* LaunchScreen.storyboard */; };
 		C28B78951DCDA47F00CEDD10 /* RioOlympicsGames2016Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B78941DCDA47F00CEDD10 /* RioOlympicsGames2016Tests.swift */; };
 		C28B78A01DCDA47F00CEDD10 /* RioOlympicsGames2016UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B789F1DCDA47F00CEDD10 /* RioOlympicsGames2016UITests.swift */; };
+		C28B78B91DCDA98800CEDD10 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B78B81DCDA98800CEDD10 /* Events.swift */; };
+		C28B78BB1DCDAC1300CEDD10 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B78BA1DCDAC1300CEDD10 /* Schedule.swift */; };
+		C28B78BE1DCDB02600CEDD10 /* baseDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B78BD1DCDB02600CEDD10 /* baseDAO.swift */; };
+		C28B78C11DCDB19A00CEDD10 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C28B78C01DCDB19A00CEDD10 /* libsqlite3.tbd */; };
+		C28B78CA1DCDC07800CEDD10 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B78C91DCDC07800CEDD10 /* DBHelper.swift */; };
+		C28B78CE1DCDCDFA00CEDD10 /* create_load.sql in Resources */ = {isa = PBXBuildFile; fileRef = C28B78CC1DCDCDFA00CEDD10 /* create_load.sql */; };
+		C28B78CF1DCDCDFA00CEDD10 /* DBConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = C28B78CD1DCDCDFA00CEDD10 /* DBConfig.plist */; };
+		C28B78D11DCF07F800CEDD10 /* ScheduleDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B78D01DCF07F800CEDD10 /* ScheduleDAO.swift */; };
+		C2DF650A1DCF7C5B00708253 /* EventsDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DF65091DCF7C5B00708253 /* EventsDAO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +56,16 @@
 		C28B789B1DCDA47F00CEDD10 /* RioOlympicsGames2016UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RioOlympicsGames2016UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28B789F1DCDA47F00CEDD10 /* RioOlympicsGames2016UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RioOlympicsGames2016UITests.swift; sourceTree = "<group>"; };
 		C28B78A11DCDA47F00CEDD10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C28B78B81DCDA98800CEDD10 /* Events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		C28B78BA1DCDAC1300CEDD10 /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		C28B78BD1DCDB02600CEDD10 /* baseDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = baseDAO.swift; sourceTree = "<group>"; };
+		C28B78C01DCDB19A00CEDD10 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		C28B78C21DCDB70E00CEDD10 /* RioOlympicsGames2016-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RioOlympicsGames2016-Bridging-Header.h"; sourceTree = "<group>"; };
+		C28B78C91DCDC07800CEDD10 /* DBHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
+		C28B78CC1DCDCDFA00CEDD10 /* create_load.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = create_load.sql; sourceTree = "<group>"; };
+		C28B78CD1DCDCDFA00CEDD10 /* DBConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DBConfig.plist; sourceTree = "<group>"; };
+		C28B78D01DCF07F800CEDD10 /* ScheduleDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleDAO.swift; sourceTree = "<group>"; };
+		C2DF65091DCF7C5B00708253 /* EventsDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsDAO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C28B78C11DCDB19A00CEDD10 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +97,14 @@
 		C28B78731DCDA47F00CEDD10 = {
 			isa = PBXGroup;
 			children = (
+				C28B78B21DCDA93D00CEDD10 /* PersistenceLayer */,
+				C28B78B11DCDA92F00CEDD10 /* BusinessLayer */,
 				C28B787E1DCDA47F00CEDD10 /* RioOlympicsGames2016 */,
 				C28B78931DCDA47F00CEDD10 /* RioOlympicsGames2016Tests */,
 				C28B789E1DCDA47F00CEDD10 /* RioOlympicsGames2016UITests */,
 				C28B787D1DCDA47F00CEDD10 /* Products */,
+				C28B78BF1DCDB19A00CEDD10 /* Frameworks */,
+				C28B78C21DCDB70E00CEDD10 /* RioOlympicsGames2016-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +148,60 @@
 			);
 			path = RioOlympicsGames2016UITests;
 			sourceTree = "<group>";
+		};
+		C28B78B11DCDA92F00CEDD10 /* BusinessLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BusinessLayer;
+			sourceTree = "<group>";
+		};
+		C28B78B21DCDA93D00CEDD10 /* PersistenceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				C28B78CB1DCDCDFA00CEDD10 /* DBFile */,
+				C28B78BC1DCDB00800CEDD10 /* DAO */,
+				C28B78B71DCDA97600CEDD10 /* Domain */,
+			);
+			path = PersistenceLayer;
+			sourceTree = "<group>";
+		};
+		C28B78B71DCDA97600CEDD10 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				C28B78B81DCDA98800CEDD10 /* Events.swift */,
+				C28B78BA1DCDAC1300CEDD10 /* Schedule.swift */,
+			);
+			name = Domain;
+			sourceTree = "<group>";
+		};
+		C28B78BC1DCDB00800CEDD10 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				C28B78BD1DCDB02600CEDD10 /* baseDAO.swift */,
+				C28B78C91DCDC07800CEDD10 /* DBHelper.swift */,
+				C28B78D01DCF07F800CEDD10 /* ScheduleDAO.swift */,
+				C2DF65091DCF7C5B00708253 /* EventsDAO.swift */,
+			);
+			name = DAO;
+			sourceTree = "<group>";
+		};
+		C28B78BF1DCDB19A00CEDD10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C28B78C01DCDB19A00CEDD10 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C28B78CB1DCDCDFA00CEDD10 /* DBFile */ = {
+			isa = PBXGroup;
+			children = (
+				C28B78CC1DCDCDFA00CEDD10 /* create_load.sql */,
+				C28B78CD1DCDCDFA00CEDD10 /* DBConfig.plist */,
+			);
+			path = DBFile;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -194,6 +272,7 @@
 					C28B787B1DCDA47F00CEDD10 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 2NHV9XL52A;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					C28B788F1DCDA47F00CEDD10 = {
@@ -235,6 +314,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C28B78CF1DCDCDFA00CEDD10 /* DBConfig.plist in Resources */,
+				C28B78CE1DCDCDFA00CEDD10 /* create_load.sql in Resources */,
 				C28B788A1DCDA47F00CEDD10 /* LaunchScreen.storyboard in Resources */,
 				C28B78871DCDA47F00CEDD10 /* Assets.xcassets in Resources */,
 				C28B78851DCDA47F00CEDD10 /* Main.storyboard in Resources */,
@@ -262,7 +343,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C28B78B91DCDA98800CEDD10 /* Events.swift in Sources */,
+				C28B78CA1DCDC07800CEDD10 /* DBHelper.swift in Sources */,
+				C28B78BE1DCDB02600CEDD10 /* baseDAO.swift in Sources */,
+				C2DF650A1DCF7C5B00708253 /* EventsDAO.swift in Sources */,
 				C28B78821DCDA47F00CEDD10 /* ViewController.swift in Sources */,
+				C28B78D11DCF07F800CEDD10 /* ScheduleDAO.swift in Sources */,
+				C28B78BB1DCDAC1300CEDD10 /* Schedule.swift in Sources */,
 				C28B78801DCDA47F00CEDD10 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,11 +502,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 2NHV9XL52A;
 				INFOPLIST_FILE = RioOlympicsGames2016/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = derex.RioOlympicsGames2016;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RioOlympicsGames2016-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -428,11 +518,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 2NHV9XL52A;
 				INFOPLIST_FILE = RioOlympicsGames2016/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = derex.RioOlympicsGames2016;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RioOlympicsGames2016-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -514,6 +606,7 @@
 				C28B78A61DCDA47F00CEDD10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C28B78A71DCDA47F00CEDD10 /* Build configuration list for PBXNativeTarget "RioOlympicsGames2016Tests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +615,7 @@
 				C28B78A91DCDA47F00CEDD10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C28B78AA1DCDA47F00CEDD10 /* Build configuration list for PBXNativeTarget "RioOlympicsGames2016UITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +624,7 @@
 				C28B78AC1DCDA47F00CEDD10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

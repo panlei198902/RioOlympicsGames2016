@@ -84,7 +84,7 @@ class ScheduleDAO: baseDAO {
                 sqlite3_bind_int(statement, 5, Int32(model.ScheduleID!))
                 
                 if sqlite3_step(statement) != SQLITE_DONE {
-                    assert(false,"修改数据失败")
+                    assert(false,"修改Schedule数据失败")
                 }
             }
             
@@ -92,6 +92,51 @@ class ScheduleDAO: baseDAO {
             sqlite3_close(db)
         }
         return 0
+    }
+    //按主键进行查询
+    func findByKey(model: Schedule) -> Schedule? {
+        
+        if self.openDB() {
+            let sql = "select GameDate,GameTime,GameInfo,EventID, ScheduleID from Schedule Where ScheduleID = ? "
+            let cSQL = sql.cString(using: String.Encoding.utf8)
+            
+            //预处理
+            var statement: OpaquePointer? = nil
+            if sqlite3_prepare_v2(db, cSQL, -1, &statement, nil) == SQLITE_OK {
+                
+                sqlite3_bind_int(db, 1, Int32(model.ScheduleID!))
+                
+                //使用sqlite_step函数执行SQL语句，遍历结果集
+                while sqlite3_step(statement) == SQLITE_ROW {
+                    let schedule = Schedule()
+                    let event = Events()
+                    
+                    schedule.Event = event
+                    
+                    //提取字段数据，char* -> String
+                    let cGameDate = sqlite3_column_text(db, 0)
+                    schedule.GameDate = String(cString: cGameDate!) as NSString
+                    
+                    let cGameTime = sqlite3_column_text(db, 1)
+                    schedule.GameTime = String(cString: cGameTime!) as NSString
+                    
+                    let cGameInfo = sqlite3_column_text(db, 2)
+                    schedule.GameInfo = String(cString: cGameInfo!) as NSString
+                    
+                    schedule.Event!.EventID = Int(sqlite3_column_int(db, 3))
+                    schedule.ScheduleID = Int(sqlite3_column_int(db, 4))
+                    
+                    
+                    sqlite3_finalize(statement)
+                    sqlite3_close(db)
+                    
+                    return schedule
+                }
+            }
+            sqlite3_finalize(statement)
+            sqlite3_close(db)
+        }
+        return nil
     }
     
     //查询所有数据方法
@@ -114,6 +159,8 @@ class ScheduleDAO: baseDAO {
                     let event = Events()
                     
                     schedule.Event = event
+                    
+
                     
                     //使用sqlite3_column_text等函数提取字段数据
                     //char* -> String

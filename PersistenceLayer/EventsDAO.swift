@@ -42,7 +42,7 @@ class EventsDAO: baseDAO {
     //查询所有数据方法
     func findAll() -> NSMutableArray {
         
-        var datas = NSMutableArray()
+        let datas = NSMutableArray()
         
         if self.openDB() {
             let sql = "SELECT EventName, EventIcon, KeyInfo, BasicsInfo, OlympicInfo, EventID FROM Events"

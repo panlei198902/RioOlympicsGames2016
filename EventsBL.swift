@@ -13,7 +13,7 @@ class EventsBL: NSObject {
     //查询所有数据方法
     func readData() -> NSMutableArray {
         let dao = EventsDAO.sharedInstance
-        var  list = dao.findAll()
+        let list = dao.findAll()
         return list
     }
 }

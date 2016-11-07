@@ -12,16 +12,16 @@ class ScheduleBL: NSObject {
     //查询所有数据
     func readData() -> NSMutableDictionary {
         
-        var scheduleDAO = ScheduleDAO.sharedInstance  //创建ScheduleDAO单例
-        var schedules = scheduleDAO.findAll()        //将查询到的ScheduleDAO中所有数据，放置到schedules中，类型为NSMutableArray
-        var resDict = NSMutableDictionary()          //创建空的NSMutableDictionary
+        let scheduleDAO = ScheduleDAO.sharedInstance  //创建ScheduleDAO单例
+        let schedules = scheduleDAO.findAll()        //将查询到的ScheduleDAO中所有数据，放置到schedules中，类型为NSMutableArray
+        let resDict = NSMutableDictionary()          //创建空的NSMutableDictionary
         
-        var eventsDAO = EventsDAO.sharedInstance   //创建EventsDAO单例
+        let eventsDAO = EventsDAO.sharedInstance   //创建EventsDAO单例
         
         //遍历所有schedules中的数据,放到字典中
         for item in schedules {
-            var schedule = item as! Schedule
-            var event = eventsDAO.findById(model: schedule.Event!)
+            let schedule = item as! Schedule
+            let event = eventsDAO.findById(model: schedule.Event!)
             schedule.Event = event
             
             
@@ -29,10 +29,10 @@ class ScheduleBL: NSObject {
             let allKey = resDict.allKeys as NSArray
             
             if allKey.contains(schedule.GameDate!) {  //判断是否包含比赛日期
-                var values = resDict[schedule.GameDate!] as! NSMutableArray
+                let values = resDict[schedule.GameDate!] as! NSMutableArray
                 values.add(schedule)
             } else {
-                var values = NSMutableArray()
+                let values = NSMutableArray()
                 values.add(schedule)
                 resDict.setObject(values, forKey: schedule.GameDate!)
             }

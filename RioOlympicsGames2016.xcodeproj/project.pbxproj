@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		C227E3041DD051F400815198 /* EventsBL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C227E3031DD051F400815198 /* EventsBL.swift */; };
 		C227E3071DD0528100815198 /* ScheduleBL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C227E3061DD0528100815198 /* ScheduleBL.swift */; };
+		C227E3091DD1663600815198 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C227E3081DD1663600815198 /* HomeViewController.swift */; };
 		C28B78801DCDA47F00CEDD10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B787F1DCDA47F00CEDD10 /* AppDelegate.swift */; };
-		C28B78821DCDA47F00CEDD10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B78811DCDA47F00CEDD10 /* ViewController.swift */; };
 		C28B78851DCDA47F00CEDD10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C28B78831DCDA47F00CEDD10 /* Main.storyboard */; };
 		C28B78871DCDA47F00CEDD10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C28B78861DCDA47F00CEDD10 /* Assets.xcassets */; };
 		C28B788A1DCDA47F00CEDD10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C28B78881DCDA47F00CEDD10 /* LaunchScreen.storyboard */; };
@@ -47,9 +47,9 @@
 /* Begin PBXFileReference section */
 		C227E3031DD051F400815198 /* EventsBL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsBL.swift; sourceTree = SOURCE_ROOT; };
 		C227E3061DD0528100815198 /* ScheduleBL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleBL.swift; sourceTree = SOURCE_ROOT; };
+		C227E3081DD1663600815198 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C28B787C1DCDA47F00CEDD10 /* RioOlympicsGames2016.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RioOlympicsGames2016.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28B787F1DCDA47F00CEDD10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C28B78811DCDA47F00CEDD10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C28B78841DCDA47F00CEDD10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C28B78861DCDA47F00CEDD10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C28B78891DCDA47F00CEDD10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -135,7 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				C28B787F1DCDA47F00CEDD10 /* AppDelegate.swift */,
-				C28B78811DCDA47F00CEDD10 /* ViewController.swift */,
+				C227E3081DD1663600815198 /* HomeViewController.swift */,
 				C28B78831DCDA47F00CEDD10 /* Main.storyboard */,
 				C28B78861DCDA47F00CEDD10 /* Assets.xcassets */,
 				C28B78881DCDA47F00CEDD10 /* LaunchScreen.storyboard */,
@@ -362,7 +362,7 @@
 				C28B78CA1DCDC07800CEDD10 /* DBHelper.swift in Sources */,
 				C28B78BE1DCDB02600CEDD10 /* baseDAO.swift in Sources */,
 				C2DF650A1DCF7C5B00708253 /* EventsDAO.swift in Sources */,
-				C28B78821DCDA47F00CEDD10 /* ViewController.swift in Sources */,
+				C227E3091DD1663600815198 /* HomeViewController.swift in Sources */,
 				C227E3071DD0528100815198 /* ScheduleBL.swift in Sources */,
 				C28B78D11DCF07F800CEDD10 /* ScheduleDAO.swift in Sources */,
 				C28B78BB1DCDAC1300CEDD10 /* Schedule.swift in Sources */,

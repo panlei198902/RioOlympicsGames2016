@@ -72,15 +72,17 @@ class EventsViewController: UICollectionViewController {
         cell.imageView.image = UIImage(named: event.EventIcon as! String)
         return cell
     }
-
+    //定义segue，就是被点击后要跳转哪儿
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "showDetail" {
+//        if segue.identifier == "ShowDetail" {
 //            let indexPaths = self.collectionView?.indexPathsForSelectedItems
 //            let indexPath = indexPaths![0]
 //            
 //            let event = self.events[indexPath.section * colum_count + indexPath.row] as! Events
 //            
-//            let detailVC = segue.destination as! EventsV
+//            let detailVC = segue.destination as! EventDetailView
+//
+//
 //            
 //        }
 //    }

@@ -38,6 +38,8 @@ class baseDAO: NSObject {
     
     //构造方法
     
-    
+    override init() {
+        DPHelper.initDB()
+    }
     
 }

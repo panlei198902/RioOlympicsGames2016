@@ -29,11 +29,11 @@
     },
     {
       "idiom" : "ipad",
-      "filename" : "Home-bg-ipad.png",
       "scale" : "1x"
     },
     {
       "idiom" : "ipad",
+      "filename" : "Home-bg-ipad.png",
       "scale" : "2x"
     }
   ],

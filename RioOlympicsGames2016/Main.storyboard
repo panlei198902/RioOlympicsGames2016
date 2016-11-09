@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16C32f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DNE-Kt-OVX">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="Ct3-wu-jko">
+            <objects>
+                <viewController id="h6d-pi-yxE" customClass="HomeViewController" customModule="RioOlympicsGames2016" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fuc-WB-ff6"/>
+                        <viewControllerLayoutGuide type="bottom" id="g4F-cJ-QZm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8Lc-ml-oCI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home-BG" translatesAutoresizingMaskIntoConstraints="NO" id="1nS-gF-rWf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1nS-gF-rWf" firstAttribute="top" secondItem="8Lc-ml-oCI" secondAttribute="top" id="Fv2-Mg-rON"/>
+                            <constraint firstItem="1nS-gF-rWf" firstAttribute="leading" secondItem="8Lc-ml-oCI" secondAttribute="leading" id="GaK-Yn-srh"/>
+                            <constraint firstItem="1nS-gF-rWf" firstAttribute="bottom" secondItem="g4F-cJ-QZm" secondAttribute="top" id="hGK-Cc-ikq"/>
+                            <constraint firstAttribute="trailing" secondItem="1nS-gF-rWf" secondAttribute="trailing" id="nwM-6n-2Fg"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="Home-TabBarIcon" id="RqR-46-Akq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CfE-s6-uJr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-63.200000000000003" y="418.74062968515744"/>
+        </scene>
+        <!--Tab Bar View Controller-->
+        <scene sceneID="zFN-81-HBe">
+            <objects>
+                <tabBarController id="DNE-Kt-OVX" customClass="TabBarViewController" customModule="RioOlympicsGames2016" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="WpE-3w-V1F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="h6d-pi-yxE" kind="relationship" relationship="viewControllers" id="gvI-Z9-lI3"/>
+                        <segue destination="gye-kR-gdd" kind="relationship" relationship="viewControllers" id="4ZJ-m5-33X"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YZd-RZ-8Fo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1014" y="91"/>
+        </scene>
+        <!--Events View Controller-->
+        <scene sceneID="4xu-3i-S4G">
+            <objects>
+                <collectionViewController id="0gN-Ac-mAa" customClass="EventsViewController" customModule="RioOlympicsGames2016" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="bLX-PJ-YLz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="9" minimumInteritemSpacing="9" id="jLX-aA-AaE">
+                            <size key="itemSize" width="106" height="106"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="50" minY="11" maxX="50" maxY="10"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="XfO-bM-4ud" customClass="EventsViewCell" customModule="RioOlympicsGames2016" customModuleProvider="target">
+                                <rect key="frame" x="50" y="11" width="106" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="106" height="106"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IBT-p8-OCb">
+                                            <rect key="frame" x="2" y="2" width="102" height="102"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <connections>
+                                    <outlet property="imageView" destination="IBT-p8-OCb" id="TJd-No-8DI"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="0gN-Ac-mAa" id="A9A-UV-sZp"/>
+                            <outlet property="delegate" destination="0gN-Ac-mAa" id="F6e-iI-1uF"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="wjZ-bw-RTu"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hGC-HK-ebo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="875.5" y="-296.5"/>
+        </scene>
+        <!--Event-->
+        <scene sceneID="JqL-6q-FeO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gye-kR-gdd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Event" image="EventIcon-TabBarIcon" id="hhn-Ga-WGU"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jok-Qk-7yi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0gN-Ac-mAa" kind="relationship" relationship="rootViewController" id="Huk-SK-R3f"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jxN-Bs-ZDZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-63.200000000000003" y="-296.40179910044981"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="EventIcon-TabBarIcon" width="30" height="30"/>
+        <image name="Home-BG" width="320" height="568"/>
+        <image name="Home-TabBarIcon" width="30" height="30"/>
+    </resources>
+</document>

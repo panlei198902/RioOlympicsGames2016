@@ -12,6 +12,7 @@ struct DPHelper {
     
     static var db: OpaquePointer? = nil
     
+    
     //获得沙箱目录Document全路径，返回C语言的字符串
     static func applicationDocumentDirectoryFile(fileName:NSString) -> [CChar]? {
         let documentDirectory: Array = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
@@ -60,13 +61,15 @@ struct DPHelper {
         //1.获取属性列表文件中数据库版本号
         let dbConfigPath = Bundle.main.path(forResource: "DBConfig", ofType: "plist")
         let dbConfigDictionary = NSDictionary(contentsOfFile: dbConfigPath!)
-        let dbConfigVersion = dbConfigDictionary?.object(forKey: "DB_VERSION") as! NSNumber
-        
+        var dbConfigVersion = dbConfigDictionary?.object(forKey: "DB_VERSION") as? NSNumber
+        if dbConfigVersion == nil {
+            dbConfigVersion = 0
+        }
         //2.获取数据库版本号
         var versionNumber = self.dbVersionNumber()
         
         //3.对比两个版本号是否一致
-        if dbConfigVersion.intValue != versionNumber {
+        if dbConfigVersion?.intValue != versionNumber {
             let dbFilePath = self.applicationDocumentDirectoryFile(fileName: DB_FILE_NAME as NSString)
             if sqlite3_open(dbFilePath, &db) == SQLITE_OK {
                 //创建数据库
@@ -79,7 +82,7 @@ struct DPHelper {
                     sqlite3_exec(db, cSql!, nil, nil, nil)
                     
                     //用属性列表文件中的版本号替代数据库中的版本号
-                    let uSql = NSString(format: "UPDATE DBVersionInfo SET version_number = %i", dbConfigVersion.intValue)
+                    let uSql = NSString(format: "UPDATE DBVersionInfo SET version_number = %i", (dbConfigVersion?.intValue)!)
                     
                     let cUsql = uSql.cString(using: String.Encoding.utf8.rawValue)
                     

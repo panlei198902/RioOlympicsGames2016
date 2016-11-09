@@ -14,6 +14,7 @@ class EventsBL: NSObject {
     func readData() -> NSMutableArray {
         let dao = EventsDAO.sharedInstance
         let list = dao.findAll()
+        print(list.description) //日志信息代码
         return list
     }
 }

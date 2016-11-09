@@ -10,7 +10,10 @@ import Foundation
 
 class ScheduleDAO: baseDAO {
     //单例变量
-    static let sharedInstance = ScheduleDAO()
+    static var sharedInstance : ScheduleDAO {
+        let instance = ScheduleDAO()
+        return instance
+    }
     private override init() {}
     
     //插入方法

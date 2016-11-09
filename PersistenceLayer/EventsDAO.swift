@@ -11,8 +11,10 @@ import Foundation
 class EventsDAO: baseDAO {
     
     //单例常量
-    static let sharedInstance : EventsDAO = EventsDAO()
-    private override init() {}
+    static var sharedInstance : EventsDAO {
+        let instance = EventsDAO()
+        return instance
+    }
     
     //插入方法
     func insert(model: Events) -> Int {
@@ -54,29 +56,29 @@ class EventsDAO: baseDAO {
             if sqlite3_prepare_v2(db, cSQL, -1, &statement, nil) == SQLITE_OK {
                 
                 //使用sqlite3_step函数执行SQL语句，遍历结果集
-                while sqlite3_step(db) == SQLITE_ROW {
+                while sqlite3_step(statement) == SQLITE_ROW {
                     
                     let events = Events()
    
                     //使用sqlite3_column_text等函数提取字段数据
                     //char* -> String
                     
-                    let cEventName = sqlite3_column_text(db, 0)
+                    let cEventName = sqlite3_column_text(statement, 0)
                     events.EventName = String(cString: cEventName!) as NSString
                     
-                    let cEventIcon = sqlite3_column_text(db, 1)
+                    let cEventIcon = sqlite3_column_text(statement, 1)
                     events.EventIcon = String(cString: cEventIcon!) as NSString
                     
-                    let cKeyInfo = sqlite3_column_text(db, 2)
+                    let cKeyInfo = sqlite3_column_text(statement, 2)
                     events.BasicsInfo = String(cString: cKeyInfo!) as NSString
                     
-                    let cBasicsInfo = sqlite3_column_text(db, 3)
+                    let cBasicsInfo = sqlite3_column_text(statement, 3)
                     events.BasicsInfo = String(cString: cBasicsInfo!) as NSString
                     
-                    let  cOlympicInfo = sqlite3_column_text(db, 4)
+                    let  cOlympicInfo = sqlite3_column_text(statement, 4)
                     events.OlympicInfo = String(cString: cOlympicInfo!) as NSString
                 
-                    events.EventID = Int(sqlite3_column_int(db, 5))
+                    events.EventID = Int(sqlite3_column_int(statement, 5))
                     
                     datas.add(events)
                 }

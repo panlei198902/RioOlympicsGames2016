@@ -70,7 +70,7 @@ class EventsDAO: baseDAO {
                     events.EventIcon = String(cString: cEventIcon!) as NSString
                     
                     let cKeyInfo = sqlite3_column_text(statement, 2)
-                    events.BasicsInfo = String(cString: cKeyInfo!) as NSString
+                    events.KeyInfo = String(cString: cKeyInfo!) as NSString
                     
                     let cBasicsInfo = sqlite3_column_text(statement, 3)
                     events.BasicsInfo = String(cString: cBasicsInfo!) as NSString

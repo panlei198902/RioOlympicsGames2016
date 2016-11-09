@@ -8,18 +8,24 @@
 
 import UIKit
 
-class EventDetailView: EventsViewController {
-
+class EventDetailView: UIViewController {
+    var event:Events!
     @IBOutlet weak var imgEventIcon: UIImageView!
     @IBOutlet weak var eventName: UILabel!
-    @IBOutlet weak var keyInfo: UILabel!
-
-    @IBOutlet weak var basicsInfo: UILabel!
-    @IBOutlet weak var olympicInfo: UILabel!
-    
+    @IBOutlet weak var keyInfo: UITextView!
+    @IBOutlet weak var basicInfo: UITextView!
+    @IBOutlet weak var olympicsInfo: UITextView!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        imgEventIcon.image = UIImage(named: self.event.EventIcon! as String)
+        eventName.text = self.event.EventName! as String
+        keyInfo.text = self.event.KeyInfo! as String
+        basicInfo.text = self.event.BasicsInfo! as String
+        olympicsInfo.text = self.event.OlympicInfo! as String
+        
+        self.scrollView.contentSize = CGSize(width: self.view.frame.width, height: 1000)
 
         // Do any additional setup after loading the view.
     }

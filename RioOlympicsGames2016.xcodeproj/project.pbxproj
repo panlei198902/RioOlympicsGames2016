@@ -71,6 +71,7 @@
 		C290CFAD1DD330C300F98E93 /* water-polo.gif in Resources */ = {isa = PBXBuildFile; fileRef = C290CF831DD330C300F98E93 /* water-polo.gif */; };
 		C290CFAE1DD330C300F98E93 /* weightlifting.gif in Resources */ = {isa = PBXBuildFile; fileRef = C290CF841DD330C300F98E93 /* weightlifting.gif */; };
 		C290CFAF1DD330C300F98E93 /* wrestling.gif in Resources */ = {isa = PBXBuildFile; fileRef = C290CF851DD330C300F98E93 /* wrestling.gif */; };
+		C290CFB31DD440D200F98E93 /* ScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290CFB21DD440D200F98E93 /* ScheduleTableViewController.swift */; };
 		C2DF650A1DCF7C5B00708253 /* EventsDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DF65091DCF7C5B00708253 /* EventsDAO.swift */; };
 /* End PBXBuildFile section */
 
@@ -163,6 +164,7 @@
 		C290CF831DD330C300F98E93 /* water-polo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "water-polo.gif"; sourceTree = "<group>"; };
 		C290CF841DD330C300F98E93 /* weightlifting.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = weightlifting.gif; sourceTree = "<group>"; };
 		C290CF851DD330C300F98E93 /* wrestling.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = wrestling.gif; sourceTree = "<group>"; };
+		C290CFB21DD440D200F98E93 /* ScheduleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewController.swift; sourceTree = "<group>"; };
 		C2DF65091DCF7C5B00708253 /* EventsDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsDAO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -321,6 +323,7 @@
 				C290CEFF1DD1A00200F98E93 /* EventsViewController.swift */,
 				C290CF011DD1A01300F98E93 /* EventsViewCell.swift */,
 				C290CF591DD31D2800F98E93 /* EventDetailView.swift */,
+				C290CFB21DD440D200F98E93 /* ScheduleTableViewController.swift */,
 			);
 			name = UIControllers;
 			sourceTree = "<group>";
@@ -570,6 +573,7 @@
 				C28B78D11DCF07F800CEDD10 /* ScheduleDAO.swift in Sources */,
 				C28B78BB1DCDAC1300CEDD10 /* Schedule.swift in Sources */,
 				C290CF021DD1A01300F98E93 /* EventsViewCell.swift in Sources */,
+				C290CFB31DD440D200F98E93 /* ScheduleTableViewController.swift in Sources */,
 				C28B78801DCDA47F00CEDD10 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

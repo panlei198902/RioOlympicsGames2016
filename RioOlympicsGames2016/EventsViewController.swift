@@ -22,6 +22,10 @@ class EventsViewController: UICollectionViewController {
         if UIDevice.current.userInterfaceIdiom == UIUserInterfaceIdiom.pad {
             colum_count = 5 //如果是pad，列数是5
         }
+        
+        if UIDevice.current.userInterfaceIdiom == UIUserInterfaceIdiom.phone {
+            colum_count = 2 //如果是phon，列数是2
+        }
 
         if self.events == nil || self.events.count == 0 {
             let bl = EventsBL()

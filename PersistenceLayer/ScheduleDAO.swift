@@ -30,7 +30,7 @@ class ScheduleDAO: baseDAO {
                 sqlite3_bind_text(statement, 1, model.GameDate!.cString(using: String.Encoding.utf8.rawValue), -1, nil)
                 sqlite3_bind_text(statement, 2, model.GameTime!.cString(using: String.Encoding.utf8.rawValue), -1, nil)
                 sqlite3_bind_text(statement, 3, model.GameInfo!.cString(using: String.Encoding.utf8.rawValue), -1, nil)
-                sqlite3_bind_int(statement, 4, Int32(model.Event!.EventID))
+                sqlite3_bind_int(statement, 4, Int32(model.Event!.EventID!))
                 
                 //4.使用sqlite3_step函数执行SQL语句，遍历结果集
                 if sqlite3_step(statement) != SQLITE_DONE {

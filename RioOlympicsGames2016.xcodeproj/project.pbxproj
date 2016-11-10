@@ -72,6 +72,9 @@
 		C290CFAE1DD330C300F98E93 /* weightlifting.gif in Resources */ = {isa = PBXBuildFile; fileRef = C290CF841DD330C300F98E93 /* weightlifting.gif */; };
 		C290CFAF1DD330C300F98E93 /* wrestling.gif in Resources */ = {isa = PBXBuildFile; fileRef = C290CF851DD330C300F98E93 /* wrestling.gif */; };
 		C290CFB31DD440D200F98E93 /* ScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290CFB21DD440D200F98E93 /* ScheduleTableViewController.swift */; };
+		C298717D1DD4B6DC00689F4E /* CountDown.png in Resources */ = {isa = PBXBuildFile; fileRef = C298717A1DD4B6DC00689F4E /* CountDown.png */; };
+		C298717E1DD4B6DC00689F4E /* CountDown@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C298717B1DD4B6DC00689F4E /* CountDown@2x.png */; };
+		C298717F1DD4B6DC00689F4E /* CountDown@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C298717C1DD4B6DC00689F4E /* CountDown@3x.png */; };
 		C2DF650A1DCF7C5B00708253 /* EventsDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DF65091DCF7C5B00708253 /* EventsDAO.swift */; };
 /* End PBXBuildFile section */
 
@@ -165,6 +168,9 @@
 		C290CF841DD330C300F98E93 /* weightlifting.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = weightlifting.gif; sourceTree = "<group>"; };
 		C290CF851DD330C300F98E93 /* wrestling.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = wrestling.gif; sourceTree = "<group>"; };
 		C290CFB21DD440D200F98E93 /* ScheduleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewController.swift; sourceTree = "<group>"; };
+		C298717A1DD4B6DC00689F4E /* CountDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CountDown.png; sourceTree = "<group>"; };
+		C298717B1DD4B6DC00689F4E /* CountDown@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CountDown@2x.png"; sourceTree = "<group>"; };
+		C298717C1DD4B6DC00689F4E /* CountDown@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CountDown@3x.png"; sourceTree = "<group>"; };
 		C2DF65091DCF7C5B00708253 /* EventsDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsDAO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -317,6 +323,7 @@
 		C290CF031DD3075900F98E93 /* UIControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C29871801DD4B6E900689F4E /* TabBar */,
 				C290CF5B1DD330C300F98E93 /* events */,
 				C290CEFB1DD19D8100F98E93 /* HomeViewController.swift */,
 				C290CEFD1DD19DFF00F98E93 /* TabBarViewController.swift */,
@@ -375,6 +382,16 @@
 				C290CF851DD330C300F98E93 /* wrestling.gif */,
 			);
 			path = events;
+			sourceTree = "<group>";
+		};
+		C29871801DD4B6E900689F4E /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				C298717A1DD4B6DC00689F4E /* CountDown.png */,
+				C298717B1DD4B6DC00689F4E /* CountDown@2x.png */,
+				C298717C1DD4B6DC00689F4E /* CountDown@3x.png */,
+			);
+			name = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -494,6 +511,7 @@
 				C290CF8D1DD330C300F98E93 /* canoe-sprint.gif in Resources */,
 				C290CF861DD330C300F98E93 /* archery.gif in Resources */,
 				C290CF931DD330C300F98E93 /* equestrian-dressage.gif in Resources */,
+				C298717F1DD4B6DC00689F4E /* CountDown@3x.png in Resources */,
 				C290CF921DD330C300F98E93 /* diving.gif in Resources */,
 				C290CF9B1DD330C300F98E93 /* gymnastics-artistic.gif in Resources */,
 				C290CFAC1DD330C300F98E93 /* volleyball.gif in Resources */,
@@ -505,6 +523,7 @@
 				C290CF9E1DD330C300F98E93 /* handball.gif in Resources */,
 				C290CFA01DD330C300F98E93 /* judo.gif in Resources */,
 				C290CF8F1DD330C300F98E93 /* cycling-mountain-bike.gif in Resources */,
+				C298717D1DD4B6DC00689F4E /* CountDown.png in Resources */,
 				C290CF8E1DD330C300F98E93 /* cycling-bmx.gif in Resources */,
 				C290CF971DD330C300F98E93 /* football.gif in Resources */,
 				C28B78CE1DCDCDFA00CEDD10 /* create_load.sql in Resources */,
@@ -517,6 +536,7 @@
 				C290CFA81DD330C300F98E93 /* table-tennis.gif in Resources */,
 				C290CF951DD330C300F98E93 /* equestrian-jumping.gif in Resources */,
 				C290CF8A1DD330C300F98E93 /* beach-volleyball.gif in Resources */,
+				C298717E1DD4B6DC00689F4E /* CountDown@2x.png in Resources */,
 				C290CFA41DD330C300F98E93 /* sailing.gif in Resources */,
 				C290CFA21DD330C300F98E93 /* rowing.gif in Resources */,
 				C28B788A1DCDA47F00CEDD10 /* LaunchScreen.storyboard in Resources */,

@@ -9,7 +9,7 @@
 import UIKit
 
 class Events: NSObject {
-    var EventID : Int!      //事件ID
+    var EventID : Int?      //事件ID
     var EventName : NSString?     //事件名称
     var EventIcon : NSString?    //事件图标
     var KeyInfo : NSString?       //关键信息

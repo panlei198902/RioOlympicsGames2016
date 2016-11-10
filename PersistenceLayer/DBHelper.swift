@@ -14,9 +14,9 @@ struct DPHelper {
     
     
     //获得沙箱目录Document全路径，返回C语言的字符串
-    static func applicationDocumentDirectoryFile(fileName:NSString) -> [CChar]? {
+    static func applicationDocumentDirectoryFile(fileName:String) -> [CChar]? {
         let documentDirectory: Array = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
-        let path = documentDirectory[0].appending(fileName as String)
+        let path = documentDirectory[0].appending(fileName)
         let cPath = path.cString(using: String.Encoding.utf8)
         
         NSLog("沙箱目录链接为: %@",path)
@@ -26,7 +26,7 @@ struct DPHelper {
     //获得数据库版本号方法
     static func dbVersionNumber() -> Int {
         var versionNumber = -1
-        let dbFilePath = self.applicationDocumentDirectoryFile(fileName: DB_FILE_NAME as NSString)
+        let dbFilePath = self.applicationDocumentDirectoryFile(fileName: DB_FILE_NAME)
         if sqlite3_open(dbFilePath, &db) == SQLITE_OK {
             let sql = "CREATE TABLE IF NOT EXISTS DBVersionInfo(version_number Int)" as NSString
             let cSql = sql.cString(using: String.Encoding.utf8.rawValue)
@@ -70,7 +70,7 @@ struct DPHelper {
         
         //3.对比两个版本号是否一致
         if dbConfigVersion?.intValue != versionNumber {
-            let dbFilePath = self.applicationDocumentDirectoryFile(fileName: DB_FILE_NAME as NSString)
+            let dbFilePath = self.applicationDocumentDirectoryFile(fileName: DB_FILE_NAME)
             if sqlite3_open(dbFilePath, &db) == SQLITE_OK {
                 //创建数据库
                 let createDBPath = Bundle.main.path(forResource: "create_load", ofType: "sql")

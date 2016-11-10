@@ -13,7 +13,7 @@ let DB_FILE_NAME = "app.db"
 class baseDAO: NSObject {
     
     var db : OpaquePointer? = nil
-    let dbPath = DPHelper.applicationDocumentDirectoryFile(fileName: DB_FILE_NAME as NSString) //DBHelper
+    let dbPath = DPHelper.applicationDocumentDirectoryFile(fileName: DB_FILE_NAME) //DBHelper
 
     
     

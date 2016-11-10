@@ -26,7 +26,7 @@ class ScheduleTableViewController: UITableViewController {
             let keys = self.data.allKeys as NSArray
             //对键排序
             self.arrayGameDateList = keys.sortedArray(using: #selector(NSNumber.compare(_:))) as NSArray
-            
+            print("arrayGameDateList数组内的成员个数:\(arrayGameDateList.count)")
         }
     }
     
@@ -56,13 +56,27 @@ class ScheduleTableViewController: UITableViewController {
         let strGameData = self.arrayGameDateList[indexPath.section] as! NSString
         let schedules = self.data.object(forKey: strGameData) as! NSArray
         let schedule = schedules.object(at: indexPath.row) as! Schedule
-        
+        print(schedule.GameInfo!)
+        print(schedule.Event!.EventName!)
         let subtitle = NSString(format: "%@ | %@", schedule.GameInfo!,schedule.Event!.EventName!)
         cell.detailTextLabel?.text = subtitle as String
         cell.textLabel?.text = schedule.GameDate as String?
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let strGameData = self.arrayGameDateList[section] as! String
+        return strGameData
+    }
 
+    override func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+        var listTitle = [String]()
+        for item in self.arrayGameDateList {
+            let title = (item as! NSString).substring(from: 5)
+            listTitle.append(title)
+        }
+        return listTitle
+    }
 
     /*
     // Override to support conditional editing of the table view.

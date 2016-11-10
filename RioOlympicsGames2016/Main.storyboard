@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16C32f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DNE-Kt-OVX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DNE-Kt-OVX">
     <device id="ipad12_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -53,11 +53,31 @@
                         <segue destination="h6d-pi-yxE" kind="relationship" relationship="viewControllers" id="gvI-Z9-lI3"/>
                         <segue destination="gye-kR-gdd" kind="relationship" relationship="viewControllers" id="4ZJ-m5-33X"/>
                         <segue destination="Mz2-Qb-2Wv" kind="relationship" relationship="viewControllers" id="aP5-0W-Y8Y"/>
+                        <segue destination="vi2-Ax-EA6" kind="relationship" relationship="viewControllers" id="1cY-al-6nf"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YZd-RZ-8Fo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1014" y="91"/>
+        </scene>
+        <!--Remain time-->
+        <scene sceneID="X9Q-hW-m0d">
+            <objects>
+                <viewController id="vi2-Ax-EA6" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iUH-d0-o5a"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lsv-rD-tPf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZyK-4j-gvT">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Remain time" image="CountDown.png" id="uv5-Ax-NYD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S9z-cM-bEw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-825" y="769"/>
         </scene>
         <!--Event Detail View-->
         <scene sceneID="zIA-GF-eXe">
@@ -289,6 +309,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="CountDown.png" width="30" height="30"/>
         <image name="EventIcon-TabBarIcon" width="30" height="30"/>
         <image name="Home-BG" width="768" height="1024"/>
         <image name="Home-TabBarIcon" width="30" height="30"/>

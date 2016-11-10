@@ -96,31 +96,32 @@ class EventsDAO: baseDAO {
         if self.openDB() {
             var statement: OpaquePointer? = nil
             
-            let sql = "SELECT EventName, EventIcon, KeyInfo, BasicsInfo, OlympicInfo, EventID FROM Event WHERE EventID = ?"
+            let sql = "SELECT EventName, EventIcon, KeyInfo, BasicsInfo, OlympicInfo, EventID FROM Events WHERE EventID = ?"
             let cSQL = sql.cString(using: String.Encoding.utf8)
             
             //预处理
-            if sqlite3_prepare_v2(db, cSQL, -1, &statement, nil) == SQLITE_OK {
+            if sqlite3_prepare_v2(db, cSQL!, -1, &statement, nil) == SQLITE_OK {
                 
-                while sqlite3_step(db) == SQLITE_ROW {
+                sqlite3_bind_int(statement, 1, Int32(model.EventID!))
+                while sqlite3_step(statement) == SQLITE_ROW {
                     let event = Events()
                     
-                    let cEventName = sqlite3_column_text(db, 0)
+                    let cEventName = sqlite3_column_text(statement, 0)
                     event.EventName = String(cString: cEventName!) as NSString
                     
-                    let cEventIcon = sqlite3_column_text(db, 1)
+                    let cEventIcon = sqlite3_column_text(statement, 1)
                     event.EventIcon = String(cString: cEventIcon!) as NSString
                     
-                    let cKeyInfo = sqlite3_column_text(db, 2)
+                    let cKeyInfo = sqlite3_column_text(statement, 2)
                     event.KeyInfo = String(cString: cKeyInfo!) as NSString
                     
-                    let cBasicsInfo = sqlite3_column_text(db, 3)
+                    let cBasicsInfo = sqlite3_column_text(statement, 3)
                     event.BasicsInfo = String(cString: cBasicsInfo!) as NSString
                     
-                    let cOlympicInfo = sqlite3_column_text(db, 4)
+                    let cOlympicInfo = sqlite3_column_text(statement, 4)
                     event.OlympicInfo = String(cString: cOlympicInfo!) as NSString
                     
-                    event.EventID = Int(sqlite3_column_int(db, 5))
+                    event.EventID = Int(sqlite3_column_int(statement, 5))
               
                     sqlite3_finalize(statement)
                     sqlite3_close(db)
@@ -152,7 +153,7 @@ class EventsDAO: baseDAO {
                 sqlite3_bind_text(db, 3, model.KeyInfo!.cString(using: String.Encoding.utf8.rawValue), -1, nil)
                 sqlite3_bind_text(db, 4, model.BasicsInfo!.cString(using: String.Encoding.utf8.rawValue), -1, nil)
                 sqlite3_bind_text(db, 5, model.OlympicInfo!.cString(using: String.Encoding.utf8.rawValue), -1, nil)
-                sqlite3_bind_int(db, 6, Int32(model.EventID))
+                sqlite3_bind_int(db, 6, Int32(model.EventID!))
                 
                 if sqlite3_step(db) != SQLITE_DONE {
                     assert(false, "修改Events数据失败")

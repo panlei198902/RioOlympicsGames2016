@@ -15,7 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        //GCD并发访问机制DispatchQueue.GlobalQueuePriority       
+        let prority = DispatchQueue.global(qos: .default)
+        prority.async(execute: {DBHelper.initDB()})
+        
+        
         return true
     }
 

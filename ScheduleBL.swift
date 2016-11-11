@@ -36,7 +36,6 @@ class ScheduleBL: NSObject {
                 values.add(schedule)
                 resDict.setObject(values, forKey: schedule.GameDate!)
             }
-            NSLog(schedule.Event!.EventName! as String)
         }
         return resDict
     }

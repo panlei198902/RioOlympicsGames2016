@@ -13,7 +13,7 @@ let DB_FILE_NAME = "app.db"
 class baseDAO: NSObject {
     
     var db : OpaquePointer? = nil
-    let dbPath = DPHelper.applicationDocumentDirectoryFile(fileName: DB_FILE_NAME) //DBHelper
+    let dbPath = DBHelper.applicationDocumentDirectoryFile(fileName: DB_FILE_NAME) //DBHelper
 
     
     
@@ -39,7 +39,7 @@ class baseDAO: NSObject {
     //构造方法
     
     override init() {
-        DPHelper.initDB()
+        DBHelper.initDB()
     }
     
 }

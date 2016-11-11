@@ -56,8 +56,6 @@ class ScheduleTableViewController: UITableViewController {
         let strGameData = self.arrayGameDateList[indexPath.section] as! NSString
         let schedules = self.data.object(forKey: strGameData) as! NSArray
         let schedule = schedules.object(at: indexPath.row) as! Schedule
-        print(schedule.GameInfo!)
-        print(schedule.Event!.EventName!)
         let subtitle = NSString(format: "%@ | %@", schedule.GameInfo!,schedule.Event!.EventName!)
         cell.detailTextLabel?.text = subtitle as String
         cell.textLabel?.text = schedule.GameDate as String?

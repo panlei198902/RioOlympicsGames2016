@@ -33,7 +33,6 @@ class EventsViewController: UICollectionViewController {
             self.events = array
             self.collectionView?.reloadData()
         }
-        print(events.count)
     }
 
     override func didReceiveMemoryWarning() {

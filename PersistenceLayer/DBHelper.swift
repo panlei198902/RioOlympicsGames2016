@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct DPHelper {
+struct DBHelper {
     
     static var db: OpaquePointer? = nil
     
@@ -65,6 +65,7 @@ struct DPHelper {
         if dbConfigVersion == nil {
             dbConfigVersion = 0
         }
+        print("初始化数据库")
         //2.获取数据库版本号
         let versionNumber = self.dbVersionNumber()
         

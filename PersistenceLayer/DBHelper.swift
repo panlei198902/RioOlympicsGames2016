@@ -65,10 +65,9 @@ struct DBHelper {
         if dbConfigVersion == nil {
             dbConfigVersion = 0
         }
-        print("初始化数据库")
         //2.获取数据库版本号
         let versionNumber = self.dbVersionNumber()
-        
+        print("初始化数据库")
         //3.对比两个版本号是否一致
         if dbConfigVersion?.intValue != versionNumber {
             let dbFilePath = self.applicationDocumentDirectoryFile(fileName: DB_FILE_NAME)

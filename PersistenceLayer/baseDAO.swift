@@ -8,7 +8,7 @@
 
 import Foundation
 
-let DB_FILE_NAME = "app.db"
+let DB_FILE_NAME = "/app.db"
 
 class baseDAO: NSObject {
     

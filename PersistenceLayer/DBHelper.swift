@@ -66,7 +66,7 @@ struct DPHelper {
             dbConfigVersion = 0
         }
         //2.获取数据库版本号
-        var versionNumber = self.dbVersionNumber()
+        let versionNumber = self.dbVersionNumber()
         
         //3.对比两个版本号是否一致
         if dbConfigVersion?.intValue != versionNumber {

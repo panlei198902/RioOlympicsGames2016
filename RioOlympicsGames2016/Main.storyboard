@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DNE-Kt-OVX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16C32f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DNE-Kt-OVX">
     <device id="ipad12_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -60,10 +60,10 @@
             </objects>
             <point key="canvasLocation" x="-1014" y="91"/>
         </scene>
-        <!--Remain time-->
+        <!--TimerViewContoller-->
         <scene sceneID="X9Q-hW-m0d">
             <objects>
-                <viewController id="vi2-Ax-EA6" sceneMemberID="viewController">
+                <viewController title="TimerViewContoller" id="vi2-Ax-EA6" customClass="TimerViewController" customModule="RioOlympicsGames2016" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iUH-d0-o5a"/>
                         <viewControllerLayoutGuide type="bottom" id="Lsv-rD-tPf"/>
@@ -71,13 +71,39 @@
                     <view key="view" contentMode="scaleToFill" id="ZyK-4j-gvT">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CountDown-BG" translatesAutoresizingMaskIntoConstraints="NO" id="GUx-cS-AQh">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1317"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFX-2o-yUV">
+                                <rect key="frame" x="507" y="273" width="192" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="GUx-cS-AQh" secondAttribute="trailing" id="CmF-nZ-iHj"/>
+                            <constraint firstItem="GUx-cS-AQh" firstAttribute="bottom" secondItem="Lsv-rD-tPf" secondAttribute="top" id="WkF-Lt-3Cl"/>
+                            <constraint firstItem="GUx-cS-AQh" firstAttribute="leading" secondItem="ZyK-4j-gvT" secondAttribute="leading" id="eSv-iN-SZ3"/>
+                            <constraint firstItem="GUx-cS-AQh" firstAttribute="top" secondItem="ZyK-4j-gvT" secondAttribute="top" id="j5p-90-IK4"/>
+                        </constraints>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="gFX-2o-yUV"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Remain time" image="CountDown.png" id="uv5-Ax-NYD"/>
+                    <connections>
+                        <outlet property="timeShow" destination="gFX-2o-yUV" id="jie-Yd-4oT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S9z-cM-bEw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-825" y="769"/>
+            <point key="canvasLocation" x="-825" y="768.66764275256219"/>
         </scene>
         <!--Event Detail View-->
         <scene sceneID="zIA-GF-eXe">
@@ -309,6 +335,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="CountDown-BG" width="768" height="1024"/>
         <image name="CountDown.png" width="30" height="30"/>
         <image name="EventIcon-TabBarIcon" width="30" height="30"/>
         <image name="Home-BG" width="768" height="1024"/>

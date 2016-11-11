@@ -75,6 +75,7 @@
 		C298717D1DD4B6DC00689F4E /* CountDown.png in Resources */ = {isa = PBXBuildFile; fileRef = C298717A1DD4B6DC00689F4E /* CountDown.png */; };
 		C298717E1DD4B6DC00689F4E /* CountDown@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C298717B1DD4B6DC00689F4E /* CountDown@2x.png */; };
 		C298717F1DD4B6DC00689F4E /* CountDown@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C298717C1DD4B6DC00689F4E /* CountDown@3x.png */; };
+		C2B04A121DD5650E00D7E23F /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B04A111DD5650E00D7E23F /* TimerViewController.swift */; };
 		C2DF650A1DCF7C5B00708253 /* EventsDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DF65091DCF7C5B00708253 /* EventsDAO.swift */; };
 /* End PBXBuildFile section */
 
@@ -171,6 +172,7 @@
 		C298717A1DD4B6DC00689F4E /* CountDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CountDown.png; sourceTree = "<group>"; };
 		C298717B1DD4B6DC00689F4E /* CountDown@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CountDown@2x.png"; sourceTree = "<group>"; };
 		C298717C1DD4B6DC00689F4E /* CountDown@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CountDown@3x.png"; sourceTree = "<group>"; };
+		C2B04A111DD5650E00D7E23F /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		C2DF65091DCF7C5B00708253 /* EventsDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsDAO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -331,6 +333,7 @@
 				C290CF011DD1A01300F98E93 /* EventsViewCell.swift */,
 				C290CF591DD31D2800F98E93 /* EventDetailView.swift */,
 				C290CFB21DD440D200F98E93 /* ScheduleTableViewController.swift */,
+				C2B04A111DD5650E00D7E23F /* TimerViewController.swift */,
 			);
 			name = UIControllers;
 			sourceTree = "<group>";
@@ -584,6 +587,7 @@
 				C227E3041DD051F400815198 /* EventsBL.swift in Sources */,
 				C290CEFE1DD19DFF00F98E93 /* TabBarViewController.swift in Sources */,
 				C28B78CA1DCDC07800CEDD10 /* DBHelper.swift in Sources */,
+				C2B04A121DD5650E00D7E23F /* TimerViewController.swift in Sources */,
 				C28B78BE1DCDB02600CEDD10 /* baseDAO.swift in Sources */,
 				C290CF001DD1A00200F98E93 /* EventsViewController.swift in Sources */,
 				C290CF5A1DD31D2800F98E93 /* EventDetailView.swift in Sources */,

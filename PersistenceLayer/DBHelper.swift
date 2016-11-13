@@ -27,23 +27,23 @@ struct DBHelper {
     static func dbVersionNumber() -> Int {
         var versionNumber = -1
         let dbFilePath = self.applicationDocumentDirectoryFile(fileName: DB_FILE_NAME)
-        if sqlite3_open(dbFilePath, &db) == SQLITE_OK {
-            let sql = "CREATE TABLE IF NOT EXISTS DBVersionInfo(version_number Int)" as NSString
-            let cSql = sql.cString(using: String.Encoding.utf8.rawValue)
+        if sqlite3_open(dbFilePath!, &db) == SQLITE_OK {
+            let sql = "CREATE TABLE IF NOT EXISTS DBVersionInfo(version_number Int)"
+            let cSql = sql.cString(using: String.Encoding.utf8)
             
             sqlite3_exec(db, cSql, nil, nil, nil) //执行创建有版本号的表格
             
             //查询版本号
-            let qsql = "SELECT version_number FROM DBVersionInfo)" as NSString
-            let cqSql = qsql.cString(using: String.Encoding.utf8.rawValue)
+            let qsql = "SELECT version_number FROM DBVersionInfo"
+            let cqSql = qsql.cString(using: String.Encoding.utf8)
             
             var statement: OpaquePointer? = nil
-            if sqlite3_prepare_v2(db, cqSql, -1, &statement, nil) == SQLITE_OK {
+            if sqlite3_prepare_v2(db, cqSql!, -1, &statement, nil) == SQLITE_OK {
                 if sqlite3_step(statement) == SQLITE_ROW {
-                    NSLog("有数据")
+                    print("有数据")
                     versionNumber = Int(sqlite3_column_int(statement, 0))
                 } else {
-                    NSLog("无数据")
+                    print("无数据")
                     let insertSQL : NSString = "INSERT INTO DBVersionInfo(version_number) VALUES(-1)"
                     let cInsertSQL = insertSQL.cString(using: String.Encoding.utf8.rawValue)
                     
@@ -66,12 +66,14 @@ struct DBHelper {
             dbConfigVersion = 0
         }
         //2.获取数据库版本号
-        let versionNumber = self.dbVersionNumber()
+        let versionNumber:Int = self.dbVersionNumber()
         print("初始化数据库")
         //3.对比两个版本号是否一致
+        print("数据库版本号:\(versionNumber)")
+        print("属性列表版本号:\((dbConfigVersion?.intValue)!)")
         if dbConfigVersion?.intValue != versionNumber {
             let dbFilePath = self.applicationDocumentDirectoryFile(fileName: DB_FILE_NAME)
-            if sqlite3_open(dbFilePath, &db) == SQLITE_OK {
+            if sqlite3_open(dbFilePath!, &db) == SQLITE_OK {
                 //创建数据库
                 let createDBPath = Bundle.main.path(forResource: "create_load", ofType: "sql")
                 
@@ -82,6 +84,7 @@ struct DBHelper {
                     sqlite3_exec(db, cSql!, nil, nil, nil)
                     
                     //用属性列表文件中的版本号替代数据库中的版本号
+                    
                     let uSql = NSString(format: "UPDATE DBVersionInfo SET version_number = %i", (dbConfigVersion?.intValue)!)
                     
                     let cUsql = uSql.cString(using: String.Encoding.utf8.rawValue)
@@ -92,6 +95,7 @@ struct DBHelper {
                 } catch {
                     NSLog("读取sql创建数据库文件失败")
                 }
+                sqlite3_close(db)
             }
         }
     }
